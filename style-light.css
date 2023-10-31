@@ -18,18 +18,57 @@
 
 
 body {
-	background-color: rgb(55 55 55);
-	color: white;
+	background-color: #fff9e4;
+	color: black;
 	font-family: Roboto-Light;
 }
 
 h1 {
 	text-align: center;
 	font-family: Roboto;
+	font-size: 50px;
+	padding: 0px;
+	margin: 0px;
 }
 
 .header {
-	background-color: black;
+	background-color: white;
+	margin: 0px;
+	padding: 35px;
+	border: solid;
+	border-radius: 30px;
+}
+
+.layout {
+	width: 45%;
+}
+
+.layout_section_1 {
+	display: inline-block;
+}
+
+
+.layout_section_2 {
+	float: right;
+}
+
+.main_block {
+	background-color: white;
 	padding: 0px;
 	margin: 0px;
+	padding: 10px;
+	border: solid white;
+	border-radius: 30px;
+	text-align: center;
+}
+
+.cv_block {
+	background-color: white;
+	padding: 0px;
+	margin: 0px;
+	padding: 10px;
+	border: solid white;
+	border-radius: 30px;
+	text-align: center;
+	border: solid black 1px;
 }
