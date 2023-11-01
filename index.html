@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style-light.css">
-	<title>TITLE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Williams - CV</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-	<div class="header">
-		<h1>Ben Williams</h1>
-	</div>
-	<br>
+    <header>
+        <h1>Ben Williams</h1>
+        <p>Software developer | Creative Thinker | Problem Solver</p>
+    </header>
 
-	<br>
-	<div class="cv_block main_block">
-		<p>Key Skills</p>
-	</div>
-	<br>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#resume">CV/Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-	<div class="cv_block layout layout_section_1">
-		<p>Advanced problem solving and mathmatical skills</p>
-	</div>
-	<div class="cv_block layout layout_section_2">
-		<p>Ability to take initivite and work well under pressure</p>
-	</div>
-	<br>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="your-photo.jpg" alt="Your Photo">
+            <p>
+                Write a brief bio about yourself, highlighting your skills, interests, and experiences. You can also mention your career goals.
+            </p>
+        </div>
+    </section>
 
-	<br>
-	<div class="cv_block layout layout_section_1">
-		<p>Ability to take instruction</p>
-	</div>
-	<div class="cv_block layout layout_section_2">
-		<p>This is a paragraph</p>
-	</div>
-	<br>
+    <section id="resume">
+        <h2>CV/Resume</h2>
+        <embed src="your-cv.pdf" type="application/pdf" width="100%" height="600px">
+    </section>
 
-	<br>
-	<div class="cv_block main_block">
-		<p>This is a paragraph</p>
-	</div>
-	<br>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <p>Project 1 description</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <p>Project 2 description</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><i class="fas fa-envelope" style="color: #FFD700;"></i> <a href="mailto:benboi294@gmail.com">benboi294@gmail.com</a></li>
+            <li><i class="fab fa-linkedin" style="color: #FFA500;"></i> <a href="https://www.linkedin.com/in/ben-williams-b2a33623b/">LinkedIn Profile</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ben Williams</p>
+    </footer>
 </body>
+<script src="script.js"></script>
 </html>
