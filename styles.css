@@ -1,3 +1,12 @@
+:root {
+    --background-color: #3e79ca;
+    --main-text-color: #ffffff;
+    --sub-title-color: #3e79ca;
+    --section-background-color: #ffffff;
+    --link-hover-color: #70b590;
+    --portfolio-title-color: #70b590;
+}
+
 /* Reset some default styles and apply a background color */
 body {
     margin: 0;
@@ -9,15 +18,15 @@ body {
 
 /* Style the header */
 header {
-    background-color: #ffa500; /* Orange background for the header */
-    color: #fff; /* White text color for the header */
+    background-color: var(--background-color); /* Background for the header */
+    color: var(--main-text-color); /* White text color for the header */
     text-align: center;
     padding: 20px;
 }
 
 header h1 {
     font-size: 36px;
-    color: white; /* Orange title color */
+    color: var(--main-text-color);
 }
 
 header p {
@@ -29,7 +38,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #ffa500; /* Orange background for the navigation menu */
+    background-color: var(--background-color);
     text-align: center;
 }
 
@@ -40,19 +49,23 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff; /* White text color for navigation links */
+    color: var(--main-text-color); /* White text color for navigation links */
     font-size: 18px;
 }
 
 /* Style sections */
 /* Original section styles */
 section {
+    width: 60%;
     padding: 40px;
-    background-color: #fff;
-    margin: 20px;
+    background-color: var(--section-background-color);
+    margin: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s; /* Add a transition for smooth size changes */
+    font-size: large;
 }
 
 /* Add hover effect to scale sections */
@@ -63,7 +76,8 @@ section:hover {
 
 section h2 {
     font-size: 24px;
-    color: #ffa500; /* Orange title color for sections */
+    color: var(--sub-title-color);
+    text-align: center;
 }
 
 /* Style images */
@@ -72,9 +86,9 @@ img {
     height: auto;
 }
 
-/* Style links */
+/* General link */
 a {
-    color: #ffa500; /* Orange text color for links */
+    color: var(--link-hover-color);  
     text-decoration: none;
 }
 
@@ -84,42 +98,41 @@ a:hover {
 
 /* Modify the color of links in the navigation menu */
 nav a {
-    color: #fff;
+    color: var(--main-text-color);
 }
 
 nav a:hover {
-    color: #ffd700; /* Yellow text color on hover */
+    color: var(--link-hover-color); 
 }
 
 /* Modify the color of links in the footer */
 footer {
-    background-color: #ffa500; /* Orange background for the footer */
-    color: #fff; /* White text color for the footer */
+    background-color: var(--background-color); 
+    color: var(--main-text-color);
     text-align: center;
     padding: 20px; /* Add padding to the top and bottom */
     margin-top: 20px; /* Add margin to the top */
 }
 
 footer a {
-    color: #fff;
+    color: var(--main-text-color);
 }
 
 footer a:hover {
-    color: #FFA500; /* Orange */
+    color: var(--link-hover-color);
 }
 
 /* Style the "Contact" section */
 section#contact {
     padding: 40px;
-    background-color: #fff;
-    margin: 20px;
+    background-color: var(--main-text-color);
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 section#contact h2 {
     font-size: 24px;
-    color: #ffa500; /* Orange title color for the contact section */
+    color: var(--sub-title-color);
 }
 
 /* Style the list in the "Contact" section */
@@ -138,4 +151,14 @@ section#contact li {
 section#contact i {
     font-size: 20px;
     margin-right: 5px; /* Add spacing between icon and text */
+    color: var(--link-hover-color);
+}
+
+
+.keySkills-list {
+    font-size: larger;
+}
+
+.portfolio-item-title {
+    color: var(--portfolio-title-color);
 }
