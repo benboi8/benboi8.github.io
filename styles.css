@@ -189,6 +189,7 @@ section#contact i {
     font-size: 20px;
     margin-right: 5px;
     /* Add spacing between icon and text */
+    color: var(--link-hover-color)
 }
 
 .contact-header a {
